@@ -1,0 +1,12 @@
+Package: cgi-io
+Version: 2022.08.10~901b0f04-r21
+Depends: libc, libubox20240329, libubus20231128
+License: GPL-2.0-or-later
+Section: net
+Architecture: mips_24kc
+Installed-Size: 81920
+Filename: cgi-io_2022.08.10~901b0f04-r21_mips_24kc.ipk
+Size: 8203
+SHA256sum: 67978baa8e8fb23e529ce780ed8d7c87408ab56b85877dc78147558d277eac85
+Description:  This package contains an cgi utility that is useful for up/downloading files
+

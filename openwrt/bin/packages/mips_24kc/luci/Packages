@@ -1,0 +1,218 @@
+Package: liblucihttp-ucode
+Version: 2023.03.15~9b5b683f-r1
+Depends: libc, liblucihttp0, libucode20230711
+License: ISC
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 71680
+Filename: liblucihttp-ucode_2023.03.15~9b5b683f-r1_mips_24kc.ipk
+Size: 4236
+SHA256sum: 3770464b16caaf53b651b56d82a26200a9ad7fce98e7aa788589a9e848ff5114
+Description:  ucode binding for the LuCI HTTP utility library
+
+Package: liblucihttp0
+Version: 2023.03.15~9b5b683f-r1
+Depends: libc
+Provides: liblucihttp
+License: ISC
+Section: libs
+ABIVersion: 0
+Architecture: mips_24kc
+Installed-Size: 71680
+Filename: liblucihttp0_2023.03.15~9b5b683f-r1_mips_24kc.ipk
+Size: 7405
+SHA256sum: 673d519aeae33059119a5f344be3e7caa75734935483026c777c6ffe9b351837
+Description:  LuCI HTTP utility library
+
+Package: luci-app-firewall
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base, uci-firewall
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 92160
+Filename: luci-app-firewall_24.216.35193~ee1bf57_all.ipk
+Size: 18204
+SHA256sum: 004d1a2bfe28d45f9f68d1fc02de47a67f6c75a4a91ee76c3b32f0a2e034a0cb
+Description:  Firewall and port forwarding application
+
+Package: luci-app-opkg
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base, opkg
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 40960
+Filename: luci-app-opkg_24.216.35193~ee1bf57_all.ipk
+Size: 10240
+SHA256sum: 9515987121d2e48adfb46c51ba6c4b384e7179c3dd8d5f9424c80399855a9b46
+Description:  OPKG package management application
+
+Package: luci-base
+Version: 24.216.35193~ee1bf57
+Depends: libc, rpcd, rpcd-mod-file, rpcd-mod-luci, rpcd-mod-ucode, cgi-io, ucode, ucode-mod-fs, ucode-mod-uci, ucode-mod-ubus, ucode-mod-math, ucode-mod-html, liblucihttp-ucode
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: mips_24kc
+Installed-Size: 552960
+Filename: luci-base_24.216.35193~ee1bf57_mips_24kc.ipk
+Size: 125090
+SHA256sum: 83d7632b92cad1d1a750430bd10a440f77d9bfcc8259c558dfc2aeed546ca5dc
+Description:  LuCI core runtime
+
+Package: luci-light
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-proto-ipv6, luci-app-firewall, luci-mod-admin-full, luci-proto-ppp, luci-theme-bootstrap, rpcd-mod-rrdns, uhttpd, uhttpd-mod-ubus
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 10240
+Filename: luci-light_24.216.35193~ee1bf57_all.ipk
+Size: 1056
+SHA256sum: cc2a670e658fe218db328f68f935f843eb45c2cb1811a797614262a422cb7bf9
+Description:  Light OpenWrt set including admin support and the default Bootstrap theme
+
+Package: luci-mod-admin-full
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base, luci-mod-status, luci-mod-system, luci-mod-network
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 10240
+Filename: luci-mod-admin-full_24.216.35193~ee1bf57_all.ipk
+Size: 997
+SHA256sum: b9a39c99c74b395afa1986acc2ff8d21e9502eb8d25dc603bc8c7d6bed306c3b
+Description:  LuCI Administration - full-featured for full control
+
+Package: luci-mod-network
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base, rpcd-mod-iwinfo
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 245760
+Filename: luci-mod-network_24.216.35193~ee1bf57_all.ipk
+Size: 57682
+SHA256sum: 414dbe83adccff4774f56e06ea699d46753b5a653c9cee82aa0c88352d593824
+Description:  LuCI Network Administration
+
+Package: luci-mod-status
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base, libiwinfo20230701, rpcd-mod-iwinfo
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: mips_24kc
+Installed-Size: 245760
+Filename: luci-mod-status_24.216.35193~ee1bf57_mips_24kc.ipk
+Size: 39741
+SHA256sum: 824371f914f6e3f07c33138843a5589e95d59013a5c7bb22387903f28a810335
+Description:  LuCI Status Pages
+
+Package: luci-mod-system
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 92160
+Filename: luci-mod-system_24.216.35193~ee1bf57_all.ipk
+Size: 18785
+SHA256sum: d47eac897a1ddbaf39d1920a4ac0004c24f53eee0b46d7aa768df06db2498c95
+Description:  LuCI Administration - Global System Settings
+
+Package: luci-proto-ipv6
+Version: 24.216.35193~ee1bf57
+Depends: libc
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 30720
+Filename: luci-proto-ipv6_24.216.35193~ee1bf57_all.ipk
+Size: 3799
+SHA256sum: 1950ac3ca4fa320c10e8b425b4b356ecd2e344097c572e6325429318a9e94911
+Description:  Support for DHCPv6/6in4/6to4/6rd/DS-Lite/IPIP6
+
+Package: luci-proto-ppp
+Version: 24.216.35193~ee1bf57
+Depends: libc
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 30720
+Filename: luci-proto-ppp_24.216.35193~ee1bf57_all.ipk
+Size: 3047
+SHA256sum: 9b867d603d5abdd3eba4be2b7575aaa9d5529ac9374d796114b4e791f045d747
+Description:  Support for PPP/PPPoE/PPPoA/PPtP
+
+Package: luci-theme-bootstrap
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-base
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 92160
+Filename: luci-theme-bootstrap_24.216.35193~ee1bf57_all.ipk
+Size: 19496
+SHA256sum: bd4f4f98f5cff9f87abb01b4860e721f7b997337be8ed3570fc0c7bc78918a65
+Description:  Bootstrap Theme (default)
+
+Package: luci
+Version: 24.216.35193~ee1bf57
+Depends: libc, luci-light, luci-app-opkg
+License: Apache-2.0
+Section: luci
+URL: https://github.com/openwrt/luci
+Architecture: all
+Installed-Size: 10240
+Filename: luci_24.216.35193~ee1bf57_all.ipk
+Size: 998
+SHA256sum: d3371d8b7297bbbaa2f5188c310ab168f0172c0a46cb738ff0d6d838d8b97010
+Description:  Standard OpenWrt set including package management and attended sysupgrades support
+
+Package: rpcd-mod-luci
+Version: 20240305-r1
+Depends: libc, rpcd, libubox20240329, libubus20231128, libnl-tiny1
+License: Apache-2.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 71680
+Filename: rpcd-mod-luci_20240305-r1_mips_24kc.ipk
+Size: 13209
+SHA256sum: fc96b947e07de289db5976fb4c0e25742fb3e63d44f41d27c88cc2198fc76316
+Description:  Provides LuCI backend ubus RPC operations.
+
+Package: rpcd-mod-rrdns
+Version: 20170710
+Depends: libc, rpcd, libubox20240329, libubus20231128
+License: Apache-2.0
+Section: libs
+Architecture: mips_24kc
+Installed-Size: 71680
+Filename: rpcd-mod-rrdns_20170710_mips_24kc.ipk
+Size: 4382
+SHA256sum: ff4059f05cedd7e88b383f6013f733ec7a7d69445eaa1814162cd4fa485901a6
+Description:  Provides rapid mass reverse DNS lookup functionality.
+
+Package: ucode-mod-html
+Version: 1
+Depends: libc, libucode20230711
+License: ISC
+Section: utils
+Architecture: mips_24kc
+Installed-Size: 143360
+Filename: ucode-mod-html_1_mips_24kc.ipk
+Size: 25835
+SHA256sum: 7474b7fc809c02bc5d603c51656a021102cc734ef5bbfb0c4ef03a04cab1f45c
+Description:  ucode HTML utility library
+
